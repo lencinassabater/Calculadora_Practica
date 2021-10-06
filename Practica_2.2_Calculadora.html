@@ -1,0 +1,54 @@
+<html>
+<head>
+  <title>Calculadora de CORE</title>
+  <meta charset="utf-8">
+  <link href="Style_calculadora.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+    <div class="someheader"></div>
+    
+    <div class = "box">
+        <h1>Calculadora de CORE</h1>
+        <form>
+            Número: <input type = "text" name "" placeholder="Type..." id = "number">
+        </form>
+    </div>
+
+    <div class = "box">
+        <h2> Info sobre el número</h2>
+        <p id = "answer"></p>
+        <p id = "total"></p>
+    </div>
+
+    <div class = "box">
+        <h3>Operaciones Unitarias</h3>
+        <button onclick="square()" id="square"><p>X<sup>2</sup></p></button>
+        <button onclick="cubo()" id="cubo"><p>X<sup>3</sup></p></button>
+        <button onclick="mod()" id="modulo">Mod</button>
+        <button onclick="factorial()" id="factorial">n!</button>
+    </div>
+
+    <div class = "box">
+        <h3>Operaciones Binarias</h3>
+        <button onclick="add()" id="suma">+</button>
+        <button onclick="resta()" id="resta">-</button>
+        <button onclick="mul()" id="multiplo">*</button>
+        <button onclick="division()" id="division">/</button>
+        <button onclick="potencia()" id="potencia"><p>X<sup>n</sup></p></button>
+        <button onclick="eq()" id="equals">=</button>
+    </div>
+
+    <div class = "box">
+        <h3>Operaciones en formato CSV</h3>
+        <button onclick="sumatorio()" id="sumatorio">∑x</button>
+        <button onclick="ordenar()" id="ordenar">ordenar</button>
+        <button onclick="revertir()" id="revertir">revertir</button>
+        <button onclick="quitar()" id="quitar">quitar</button>
+    </div>
+
+
+    <script type = "text/javascript" src="Calculadora_js.js"></script>
+
+</body>
